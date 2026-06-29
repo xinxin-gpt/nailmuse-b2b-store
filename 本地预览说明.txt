@@ -1,0 +1,21 @@
+美甲 B2B 独立站本地预览方法（Windows）
+
+方法一：一键预览
+1. 先安装 Node.js LTS：https://nodejs.org/
+2. 解压整个压缩包。
+3. 打开 nail-b2b-site 文件夹。
+4. 双击“一键本地预览.bat”。
+5. 首次启动会自动安装依赖，完成后浏览器打开：http://localhost:3000
+6. 后台导入页面：http://localhost:3000/admin/import
+7. 关闭黑色命令窗口即可停止网站。
+
+方法二：手动启动
+在包含 package.json 的文件夹打开 CMD，然后运行：
+
+npm install
+npm run dev
+
+浏览器访问：http://localhost:3000
+
+说明：
+本项目是 Next.js 网站，源码首页是 app/page.tsx，不是传统 index.html。

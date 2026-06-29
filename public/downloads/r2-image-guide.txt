@@ -1,0 +1,13 @@
+Cloudflare R2 image folder recommendation
+
+/products/{product-slug}/main.webp
+/products/{product-slug}/angle-01.webp
+/products/{product-slug}/detail-01.webp
+/products/{product-slug}/packaging.webp
+/categories/press-on-nails.webp
+/brand/logo.svg
+/marketing/hero-home.webp
+
+Recommended product image size: 1600 x 1600 px, WebP, under 350 KB when possible.
+Use lowercase file names and hyphens. Avoid spaces and Chinese characters in public URLs.
+Set NEXT_PUBLIC_R2_PUBLIC_URL=https://assets.yourdomain.com in Vercel.
