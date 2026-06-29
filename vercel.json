@@ -1,5 +1,14 @@
 {
   "framework": "nextjs",
+  "env": {
+    "R2_ACCOUNT_ID": "9bdbed976c68bb225f73627e29b209d2",
+    "R2_ACCESS_KEY_ID": "e95d96fc009963852379447febf56b12",
+    "R2_SECRET_ACCESS_KEY": "af6513a9f2873ecdd983ab516f2ccbb8cc223e501dd99df8a530a554093ca879",
+    "R2_BUCKET_NAME": "dedxc",
+    "R2_PUBLIC_URL": "https://pub-68afa0bd85f9439898da18ca3e5974fa.r2.dev",
+    "PRODUCT_IMPORT_ADMIN_TOKEN": "dedxc",
+    "NEXT_PUBLIC_R2_PUBLIC_URL": "https://pub-68afa0bd85f9439898da18ca3e5974fa.r2.dev"
+  },
   "headers": [
     {
       "source": "/(.*)",
