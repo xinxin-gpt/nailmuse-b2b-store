@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { checkAdminRequest } from "@/lib/admin-auth";
-import { catalogStorageInfo, readCatalog, writeCatalog } from "@/lib/catalog-store";
-import { mergeImportedProducts, parseProductImport } from "@/lib/product-import";
+import { readReviews, writeReviews } from "@/lib/review-store";
+import { mergeImportedReviews, parseReviewImport } from "@/lib/review-import";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -29,10 +29,10 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: false, error: "Only .csv, .xlsx and .txt files are supported." }, { status: 400 });
     }
 
-    const parsed = await parseProductImport(file.name, Buffer.from(await file.arrayBuffer()));
+    const parsed = await parseReviewImport(file.name, Buffer.from(await file.arrayBuffer()));
     const previewRows = parsed.rows.slice(0, 100).map((row) => ({
       rowNumber: row.rowNumber,
-      product: row.product,
+      review: row.review,
       errors: row.errors,
       warnings: row.warnings
     }));
@@ -48,19 +48,18 @@ export async function POST(request: Request) {
           invalidRows: parsed.invalidRows,
           previewLimited: parsed.rows.length > previewRows.length
         },
-        rows: previewRows,
-        storage: catalogStorageInfo()
+        rows: previewRows
       });
     }
 
     if (!parsed.validRows) {
-      return NextResponse.json({ ok: false, error: "No valid product rows were found.", rows: previewRows }, { status: 422 });
+      return NextResponse.json({ ok: false, error: "No valid review rows were found.", rows: previewRows }, { status: 422 });
     }
 
-    const currentCatalog = await readCatalog();
-    const current = currentCatalog.source === "r2" ? currentCatalog.products : [];
-    const merged = mergeImportedProducts(current, parsed.products, mode);
-    const catalog = await writeCatalog(merged, { createBackup: true });
+    const currentCatalog = await readReviews();
+    const current = currentCatalog.reviews;
+    const merged = mergeImportedReviews(current, parsed.reviews, mode);
+    const catalog = await writeReviews(merged);
 
     return NextResponse.json({
       ok: true,
@@ -70,14 +69,14 @@ export async function POST(request: Request) {
         totalRows: parsed.totalRows,
         importedRows: parsed.validRows,
         skippedRows: parsed.invalidRows,
-        catalogProducts: catalog.products.length,
+        catalogReviews: catalog.reviews.length,
         updatedAt: catalog.updatedAt
       },
       rows: previewRows
     });
   } catch (error) {
-    console.error("Product import failed", error);
-    const message = error instanceof Error ? error.message : "Product import failed.";
+    console.error("Review import failed", error);
+    const message = error instanceof Error ? error.message : "Review import failed.";
     return NextResponse.json({ ok: false, error: message }, { status: 500 });
   }
 }

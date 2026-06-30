@@ -94,6 +94,13 @@ function parseCsv(text: string): string[][] {
   return rows;
 }
 
+function parseTsv(text: string): string[][] {
+  return text
+    .split(/\r?\n/)
+    .filter((line) => line.trim() !== "")
+    .map((line) => line.split("\t").map((cell) => cell.trim().replace(/^"|"$/g, "")));
+}
+
 function tableToObjects(table: unknown[][]): RawRow[] {
   if (!table.length) return [];
   const headers = table[0].map((header) => String(header ?? "").trim());
@@ -111,12 +118,15 @@ async function readRows(fileName: string, buffer: Buffer): Promise<RawRow[]> {
   if (extension === "csv") {
     return tableToObjects(parseCsv(buffer.toString("utf8")));
   }
+  if (extension === "txt") {
+    return tableToObjects(parseTsv(buffer.toString("utf8")));
+  }
   if (extension === "xlsx") {
     const sheets = await readXlsxFile(buffer);
     const table = sheets[0]?.data || [];
     return tableToObjects(table as unknown[][]);
   }
-  throw new Error("Only .csv and .xlsx files are supported.");
+  throw new Error("Only .csv, .xlsx and .txt files are supported.");
 }
 
 function rawRowToProduct(row: RawRow, index: number) {
