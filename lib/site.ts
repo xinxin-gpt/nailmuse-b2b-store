@@ -15,7 +15,9 @@ export const siteConfig = {
     { label: "OEM / ODM", href: "/oem-odm" },
     { label: "Wholesale", href: "/wholesale" },
     { label: "Factory", href: "/factory" },
-    { label: "Catalog", href: "/catalog" },
+    { label: "About", href: "/about" },
+    { label: "Blog", href: "/blog" },
+    { label: "FAQ", href: "/faq" },
     { label: "Contact", href: "/contact" }
   ]
 };
