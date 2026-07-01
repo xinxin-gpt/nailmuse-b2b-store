@@ -12,8 +12,7 @@ export function Header() {
       <div className="announcement">Factory-direct pricing · OEM/ODM support · Global shipping</div>
       <div className="container nav-wrap">
         <Link href="/" className="brand" aria-label={siteConfig.name}>
-          <span className="brand-mark">NM</span>
-          <span><strong>{siteConfig.name}</strong><small>B2B NAIL SUPPLY</small></span>
+          <img src="/logo.png" alt={siteConfig.name} className="h-10 w-auto" />
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {siteConfig.navigation.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
