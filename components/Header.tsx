@@ -12,7 +12,7 @@ export function Header() {
       <div className="announcement">Factory-direct pricing · OEM/ODM support · Global shipping</div>
       <div className="container nav-wrap">
         <Link href="/" className="brand" aria-label={siteConfig.name}>
-          <img src="/logo.png" alt={siteConfig.name} className="h-8 w-auto object-contain" />
+          <img src="/logo.png" alt={siteConfig.name} style={{height:"40px",width:"auto",maxWidth:"160px",objectFit:"contain"}} />
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {siteConfig.navigation.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
