@@ -1,7 +1,7 @@
 @echo off
 chcp 65001 >nul
 cd /d "%~dp0"
-title NailMuse B2B Website Preview
+title Dedxc B2B Website Preview
 
 echo ========================================
 echo   美甲 B2B 独立站 - 本地预览

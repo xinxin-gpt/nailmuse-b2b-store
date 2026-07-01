@@ -4,11 +4,11 @@ import { ArrowRight, BadgeCheck, Globe2, Factory, Layers, ShieldCheck, Users, Bo
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About NailMuse | B2B Press-On Nails & Gel Strips Manufacturer",
+  title: "About Dedxc | B2B Press-On Nails & Gel Strips Manufacturer",
   description:
-    "NailMuse is a B2B wholesale manufacturer and private label partner for press-on nails, semi-cured gel nail strips, and professional nail tools. 390+ SKUs, low MOQ from 100 sets, factory-direct pricing, global shipping to 50+ countries.",
+    "Dedxc is a B2B wholesale manufacturer and private label partner for press-on nails, semi-cured gel nail strips, and professional nail tools. 390+ SKUs, low MOQ from 100 sets, factory-direct pricing, global shipping to 50+ countries.",
   keywords: [
-    "NailMuse",
+    "Dedxc",
     "B2B press-on nails manufacturer",
     "wholesale gel nail strips supplier",
     "private label nails",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${siteConfig.domain}/about` },
   openGraph: {
-    title: "About NailMuse | B2B Nail Product Manufacturer",
+    title: "About Dedxc | B2B Nail Product Manufacturer",
     description:
       "B2B wholesale and private label manufacturer of press-on nails, semi-cured gel strips, and professional nail tools. Serving 50+ countries with 390+ SKUs.",
     type: "website",
@@ -30,7 +30,7 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: siteConfig.name,
-  alternateName: "NailMuse",
+  alternateName: "Dedxc",
   url: siteConfig.domain,
   logo: `${siteConfig.domain}/logo.png`,
   description:
@@ -125,7 +125,7 @@ const advantages = [
   {
     title: "Factory-Direct Pricing",
     body:
-      "By eliminating middlemen, NailMuse offers 15–30% lower wholesale pricing compared to traditional trading companies. Bulk orders qualify for tiered volume discounts."
+      "By eliminating middlemen, Dedxc offers 15–30% lower wholesale pricing compared to traditional trading companies. Bulk orders qualify for tiered volume discounts."
   },
   {
     title: "Low MOQ for New Brands",
@@ -172,10 +172,10 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="section section-hero">
         <div className="container">
-          <span className="eyebrow">About NailMuse</span>
+          <span className="eyebrow">About Dedxc</span>
           <h1>Your Trusted B2B Partner for Press-On Nails, Gel Strips & Private Label Manufacturing</h1>
           <p className="lede">
-            NailMuse is a B2B-focused nail product manufacturing and supply platform serving beauty brands, salon chains, retailers,
+            Dedxc is a B2B-focused nail product manufacturing and supply platform serving beauty brands, salon chains, retailers,
             and subscription box operators worldwide. Operating through <strong>dedxc.com</strong>, we bridge high-quality Chinese
             nail product factories with global beauty entrepreneurs who need reliable, customizable, and scalable supply.
           </p>
@@ -231,7 +231,7 @@ export default function AboutPage() {
       {/* Why buyers choose */}
       <section className="section section-muted">
         <div className="container">
-          <span className="eyebrow">Why Buyers Choose NailMuse</span>
+          <span className="eyebrow">Why Buyers Choose Dedxc</span>
           <h2>Built for B2B reliability, not retail margins</h2>
           <div className="advantage-list">
             {advantages.map((a) => (
@@ -285,13 +285,13 @@ export default function AboutPage() {
           <span className="eyebrow">Our Story</span>
           <h2>Make professional nail manufacturing accessible to every beauty entrepreneur</h2>
           <p>
-            NailMuse was founded with a clear mission: simplify B2B nail sourcing for the next generation of beauty brands. Traditional
+            Dedxc was founded with a clear mission: simplify B2B nail sourcing for the next generation of beauty brands. Traditional
             sourcing has been fragmented — language barriers, opaque pricing, high MOQs, and quality inconsistencies kept many
             promising brands from scaling.
           </p>
           <p>
-            We built NailMuse to solve this by combining a transparent online catalog, factory-direct relationships, and bilingual B2B
-            service into a single platform at <strong>dedxc.com</strong>. Today, NailMuse serves a growing community of nail brand
+            We built Dedxc to solve this by combining a transparent online catalog, factory-direct relationships, and bilingual B2B
+            service into a single platform at <strong>dedxc.com</strong>. Today, Dedxc serves a growing community of nail brand
             founders, retail buyers, and salon operators who value quality, reliability, and partnership over transactional supply.
           </p>
         </div>
@@ -300,7 +300,7 @@ export default function AboutPage() {
       {/* How to work with us */}
       <section className="section section-muted">
         <div className="container">
-          <span className="eyebrow">How to Work With NailMuse</span>
+          <span className="eyebrow">How to Work With Dedxc</span>
           <h2>From inquiry to shipment in five clear steps</h2>
           <div className="workflow-grid">
             {workflow.map(([n, t, d]) => (
@@ -318,11 +318,11 @@ export default function AboutPage() {
       <section className="section">
         <div className="container narrow">
           <div className="fact-card">
-            <h3>NailMuse Quick Facts</h3>
+            <h3>Dedxc Quick Facts</h3>
             <p>
-              <strong>NailMuse</strong> is a B2B wholesale and private label manufacturer of press-on nails, semi-cured gel nail strips,
+              <strong>Dedxc</strong> is a B2B wholesale and private label manufacturer of press-on nails, semi-cured gel nail strips,
               glue-on gel nails, and professional nail tools, operating through <strong>dedxc.com</strong>. Serving 50+ countries with
-              390+ SKUs, NailMuse offers low MOQs starting at 100 sets, factory-direct pricing, and full OEM/ODM customization. The
+              390+ SKUs, Dedxc offers low MOQs starting at 100 sets, factory-direct pricing, and full OEM/ODM customization. The
               company partners with ISO 9001, CPNP, and GMPC-certified manufacturers across China&apos;s leading nail production clusters.
             </p>
           </div>

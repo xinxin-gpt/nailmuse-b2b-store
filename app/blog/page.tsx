@@ -6,19 +6,19 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "B2B Nail Industry Blog | Trends, Sourcing & OEM Insights",
   description:
-    "In-depth B2B insights on press-on nails, semi-cured gel strips, private label nail manufacturing, OEM sourcing and beauty trends from NailMuse experts.",
+    "In-depth B2B insights on press-on nails, semi-cured gel strips, private label nail manufacturing, OEM sourcing and beauty trends from Dedxc experts.",
   keywords: [
     "nail industry blog",
     "B2B nail sourcing",
     "semi-cured gel strips guide",
     "private label nails insights",
     "press-on nails trends",
-    "NailMuse blog",
+    "Dedxc blog",
     "dedxc.com"
   ],
   alternates: { canonical: `${siteConfig.domain}/blog` },
   openGraph: {
-    title: "NailMuse B2B Blog — Nail Industry Insights",
+    title: "Dedxc B2B Blog — Nail Industry Insights",
     description:
       "Deep-dive guides on sourcing, OEM manufacturing, and the latest trends in the global B2B nail market.",
     type: "website",
@@ -42,7 +42,7 @@ const posts = [
 const blogSchema = {
   "@context": "https://schema.org",
   "@type": "Blog",
-  name: "NailMuse B2B Blog",
+  name: "Dedxc B2B Blog",
   url: `${siteConfig.domain}/blog`,
   description:
     "B2B insights on press-on nails, semi-cured gel strips, OEM manufacturing and global beauty supply chain.",

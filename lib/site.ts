@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "NailMuse Pro",
+  name: "Dedxc Pro",
   legalName: "Your Nail Products Co., Ltd.",
   tagline: "OEM & Wholesale Nail Products for Global Beauty Brands",
   description:

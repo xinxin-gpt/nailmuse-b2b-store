@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.domain),
   title: { default: `${siteConfig.name} | B2B Press-On Nail Manufacturer`, template: `%s | ${siteConfig.name}` },
   description: siteConfig.description,
-  keywords: ["press on nail manufacturer", "custom press on nails", "nail supplier", "OEM nail products", "wholesale press on nails", "semi-cured gel nail strips", "private label nails", "NailMuse", "dedxc.com"],
+  keywords: ["press on nail manufacturer", "custom press on nails", "nail supplier", "OEM nail products", "wholesale press on nails", "semi-cured gel nail strips", "private label nails", "Dedxc", "dedxc.com"],
   openGraph: { title: siteConfig.name, description: siteConfig.description, type: "website", url: siteConfig.domain }
 };
 
@@ -16,7 +16,7 @@ const rootOrganizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: siteConfig.name,
-  alternateName: "NailMuse",
+  alternateName: "Dedxc",
   url: siteConfig.domain,
   logo: `${siteConfig.domain}/logo.png`,
   description:

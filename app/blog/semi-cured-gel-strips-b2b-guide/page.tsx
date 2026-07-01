@@ -11,11 +11,11 @@ const POST = {
     "Semi-cured gel nail strips are rapidly replacing traditional nail polish and standard vinyl wraps as the #1 growth driver for B2B nail brands. Discover the technology, profit logic, and OEM opportunities.",
   date: "2026-07-01",
   readingTime: "5 min read",
-  author: "NailMuse Editorial Team"
+  author: "Dedxc Editorial Team"
 };
 
 export const metadata: Metadata = {
-  title: `${POST.title} | NailMuse Blog`,
+  title: `${POST.title} | Dedxc Blog`,
   description: POST.excerpt,
   keywords: [
     "semi-cured gel nail strips wholesale",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "OEM nail strips factory",
     "semi-cured gel technology",
     "nail brand sourcing 2026",
-    "NailMuse",
+    "Dedxc",
     "dedxc.com"
   ],
   alternates: { canonical: `${siteConfig.domain}/blog/${POST.slug}` },
@@ -111,7 +111,7 @@ export default function BlogPostPage() {
             <p className="lede">
               In a fast-evolving global beauty market, <strong>semi-cured gel nail strips</strong> are rapidly replacing traditional gel
               polish and standard vinyl nail wraps as the preferred choice for B2B wholesalers and private label entrepreneurs. As a
-              leader in the global nail supply chain, NailMuse breaks down the commercial value of this technology.
+              leader in the global nail supply chain, Dedxc breaks down the commercial value of this technology.
             </p>
 
             <h2>What is &ldquo;Semi-Cured&rdquo; Technology? (High Information Density)</h2>
@@ -131,7 +131,7 @@ export default function BlogPostPage() {
                 <strong>Wear time:</strong> Up to <strong>14 days</strong> with correct application.
               </li>
               <li>
-                <strong>Compliance:</strong> NailMuse supplies <strong>CPNP</strong> (EU) and{" "}
+                <strong>Compliance:</strong> Dedxc supplies <strong>CPNP</strong> (EU) and{" "}
                 <strong>ISO 9001</strong> certified product, ready for global export.
               </li>
             </ul>
@@ -153,7 +153,7 @@ export default function BlogPostPage() {
             </p>
 
             <h3>3. Low-barrier private label (OEM)</h3>
-            <p>At NailMuse we know brand equity matters. For the semi-cured category we offer:</p>
+            <p>At Dedxc we know brand equity matters. For the semi-cured category we offer:</p>
             <ul>
               <li>
                 <strong>Low MOQ:</strong> Start with <strong>200 sets</strong> per design for your private label.
@@ -164,9 +164,9 @@ export default function BlogPostPage() {
               </li>
             </ul>
 
-            <h2>Conclusion: Plan for 2026, Start With NailMuse</h2>
+            <h2>Conclusion: Plan for 2026, Start With Dedxc</h2>
             <p>
-              If you are looking for a reliable <strong>wholesale gel nail strip supplier</strong>, NailMuse maintains 160+ original
+              If you are looking for a reliable <strong>wholesale gel nail strip supplier</strong>, Dedxc maintains 160+ original
               semi-cured designs — from minimal solid tones (such as our Coconut Milk series) to advanced holographic prints.
             </p>
             <p>

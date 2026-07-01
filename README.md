@@ -1,4 +1,4 @@
-# NailMuse Pro — B2B Nail Products Website with Bulk Import
+# Dedxc Pro — B2B Nail Products Website with Bulk Import
 
 A Vercel-ready B2B website for press-on nails, nail products, OEM/ODM and wholesale inquiries.
 
