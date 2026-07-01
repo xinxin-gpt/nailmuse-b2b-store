@@ -24,10 +24,19 @@ export default async function Home() {
             <div className="trust-row"><span><BadgeCheck size={18}/>Low MOQ options</span><span><BadgeCheck size={18}/>Custom packaging</span><span><BadgeCheck size={18}/>Global shipping</span></div>
           </div>
           <div className="hero-visual">
-            <div className="hero-card main"><img src={asset("/products/chrome.svg")} alt="Custom chrome press-on nails"/></div>
-            <div className="hero-card small one"><img src={asset("/products/floral.svg")} alt="3D floral press-on nails"/></div>
-            <div className="hero-card small two"><img src={asset("/products/french.svg")} alt="French press-on nails"/></div>
-            <div className="hero-stat"><strong>OEM / ODM</strong><span>Design → Sampling → Production</span></div>
+            <div className="hero-card main">
+              <img src="https://sc02.alicdn.com/kf/A1c804b6037ce428aa346bce49e621c39h.png" alt="Chrome silver press-on nails wholesale"/>
+              <span className="hero-card-label">定制镀铬贴合钉</span>
+            </div>
+            <div className="hero-card small one">
+              <img src="https://sc02.alicdn.com/kf/A2cbf1189d5d2420a8b00878c909e2373t.png" alt="3D floral handmade press-on nails"/>
+              <span className="hero-card-label">3D花卉贴甲</span>
+            </div>
+            <div className="hero-card small two">
+              <img src="https://sc02.alicdn.com/kf/Ad25089bc37a941d7a325b2ea0025cb664.png" alt="French tip press-on nails"/>
+              <span className="hero-card-label">法式贴合钉</span>
+            </div>
+            <div className="hero-stat"><strong>OEM / ODM</strong><span>设计→采样→生产</span></div>
           </div>
         </div>
       </section>
